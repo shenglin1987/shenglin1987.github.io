@@ -1,1 +1,6 @@
-This if the first page for test. 
+---
+layout: post
+title: First Page!
+---
+
+This is the first page for test!
