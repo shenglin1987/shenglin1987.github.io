@@ -1,9 +1,10 @@
-This page introduces how to use sparksklearn to accelerate the parameter tuning by scikit-learn. 
+## This page introduces how to use sparksklearn to accelerate the parameter tuning by scikit-learn. 
 
 Code is the best way to talk. 
 
-# this is the code using gridsearch to tune a random forest classier in scikit learn
+## this is the code using gridsearch to tune a random forest classier in scikit learn
 -----------------------------------------------------------
+...
 from sklearn import grid_search, datasets
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.grid_search import GridSearchCV
@@ -18,8 +19,10 @@ param_grid = {"max_depth": [3, None],
               "n_estimators": [10, 20, 40, 80]}
 gs = GridSearchCV(RandomForestClassifier(), param_grid=param_grid)
 gs.fit(X, y)
+...
 -----------------------------------------------------------
-# accelerate via spark_sklearn
+## accelerate via spark_sklearn ##
+...
 from sklearn import grid_search, datasets
 from sklearn.ensemble import RandomForestClassifier
 # Use spark_sklearn’s grid search instead:
@@ -35,5 +38,6 @@ param_grid = {"max_depth": [3, None],
               "n_estimators": [10, 20, 40, 80]}
 gs = GridSearchCV(RandomForestClassifier(), param_grid=param_grid)
 gs.fit(X, y)
+...
 -----------------------------------------------------------
-We do not need to change the body code. Just import new APIs from spark_sklearn
+###We do not need to change the body code. Just import new APIs from spark_sklearn
