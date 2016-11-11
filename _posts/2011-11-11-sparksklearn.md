@@ -1,8 +1,8 @@
-## This page introduces how to use sparksklearn to accelerate the parameter tuning by scikit-learn. 
+## Accelerate the parameter tuning by spark_sklearn. 
 
 Code is the best way to talk. 
 
-## this is the code using gridsearch to tune a random forest classier in scikit learn
+this is the code using gridsearch to tune a random forest classier in scikit learn
 -----------------------------------------------------------
 
 ```
